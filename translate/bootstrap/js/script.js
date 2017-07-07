@@ -9,6 +9,7 @@ document.querySelector('#translate').addEventListener('click', function () {
         langAPI = document.querySelector('#lang').value,
         formatAPI = "plain";
         var data = "key="+myKey+"&text="+textAPI+"&lang="+langAPI+"&format="+formatAPI;
+        console.log(data);
 
     xhr.open("POST",url,true);
     xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");

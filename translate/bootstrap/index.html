@@ -1,23 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="js flexbox canvas canvastext no-webgl no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
     <head>
         <meta charset="UTF-8">
         <title>Translate</title>
-        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/bootstrap.min.js">
+        <link rel="stylesheet" href="js/jquery-3.1.1.min.js">
     </head>
-    <body>
+   <!--
     <p class="ff"><mark class="red">Y</mark>andex Translate</p>
         <input class="ff" id="originalText" type="text" placeholder="Type" size="40" rows="4" autofocus>
         <select class="ff" name="to" id="lang">
-            <option class="ff" value="en-ru" selected="selected">English</option>
-            <option class="ff" value="en-ru">Russian</option>
+            <option class="ff" value="en" selected="selected">English</option>
+            <option class="ff" value="ru">Russian</option>
             <option class="ff" value="es">Spanish</option>
             <option class="ff" value="fr">French</option>
             <option class="ff" value="de">German</option>
         </select>
         <button class="ff" id="translate" type="button">Translate</button>
         <input class="ff" id="translateText" type="text" size="40">
+    -->
 
-    <script src="script.js"></script>
+    <br>
+    <br>
+    <div class="container">
+        <div class="jumbotron" id="jumbotron">
+            <div class="row">
+                <div class="col-xs-10 col-md-10 col-lg-10 col-sm-10 no_padding">
+                    <div id="logo">
+                        <img src="img/Yandex_logo.png" style="width:10%" class="yandex">
+                        <img src="img/service_name.png" style="width:9%" class="tr">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-md-10 col-lg-10 col-sm-10 no_padding">
+                    <input class="ff" id="originalText" type="text" placeholder="Text" size="40" rows="4" autofocus>
+                    <select class="ff" name="to" id="lang">
+                        <option class="ff" value="ru">Russian</option>
+                        <option class="ff" value="es">Spanish</option>
+                        <option class="ff" value="fr">French</option>
+                        <option class="ff" value="de">German</option>
+                    </select>
+                    <button class="ff" id="translate" type="button">Translate</button>
+                    <input class="ff" id="translateText" type="text" size="40">
+                    <div class="english">English by default</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
     </body>
 </html>

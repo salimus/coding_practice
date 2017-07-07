@@ -1,7 +1,22 @@
-mark.red {
-    color:#ff0000;
-    background: none;
-}
 .ff {
     font-family: sans-serif;
+}
+
+#jumbotron {
+    background-color:#ffcc00;
+    padding: 80px;
+}
+
+.yandex {
+    padding-bottom: 30px;
+}
+.tr {
+    padding-bottom: 19px;
+}
+
+.english {
+    padding-top: 5px;
+    font-size: 8pt;
+    font-family: sans-serif;
+    color: #888888;
 }
