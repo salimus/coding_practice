@@ -14,6 +14,7 @@ document.querySelector('#translate').addEventListener('click', function () {
     xhr.open("POST",url,true);
     xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
     xhr.send(data);
+
     xhr.onreadystatechange = function () {
         if (this.readyState==4 && this.status==200) {
             var result = this.responseText;
